@@ -2,6 +2,7 @@
 const static_config = require('fastify');
 const config = require ('./config/config')
 const{init,run} = require ('./server');
+
 (async()=>{
   try{
     const server=await init({config});
